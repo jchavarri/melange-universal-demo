@@ -1,0 +1,21 @@
+opam-version: "2.0"
+synopsis: "Univeral Melange demo"
+description: "A demo showcasing universal code built with two Dune contexts"
+maintainer: ["<your_name>"]
+authors: ["<your_name>"]
+license: "MIT"
+homepage: "https://github.com/your/project"
+bug-reports: "https://github.com/your/project/issues"
+depends: [
+  "ocaml" {>= "5.1.0"}
+  "reason" {>= "3.10.0"}
+  "dune" {= "pr_9839"}
+  "melange" {>= "2.0.0"}
+  "reason-react" {>= "0.13.0"}
+  "reason-react-ppx"
+  "opam-check-npm-deps" {with-test} # todo: use with-dev-setup once opam 2.2 is out
+  "ocaml-lsp-server" {with-test} # todo: use with-dev-setup once opam 2.2 is out
+  "odoc" {with-doc}
+]
+dev-repo: "git+https://github.com/your/project.git"
+pin-depends: [ "dune.pr_9839" "https://github.com/ocaml/dune/archive/cd54d89f660f2c977413fa310ee1a77c94a00ba0.tar.gz" ]

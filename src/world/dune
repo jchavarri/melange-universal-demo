@@ -1,0 +1,8 @@
+(library
+ (name world)
+ (modes melange)
+ (enabled_if (= %{context_name} "melange")))
+
+(library
+ (name world)
+ (enabled_if (= %{context_name} "default")))
